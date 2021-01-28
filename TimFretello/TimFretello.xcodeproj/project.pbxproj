@@ -3,18 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A3DD9C25C2FEBB007ADB2C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DD9B25C2FEBB007ADB2C /* Constants.swift */; };
 		04FB41DE25C2C2A500B6A6AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB41DD25C2C2A500B6A6AF /* AppDelegate.swift */; };
 		04FB41E025C2C2A500B6A6AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB41DF25C2C2A500B6A6AF /* SceneDelegate.swift */; };
-		04FB41E225C2C2A500B6A6AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB41E125C2C2A500B6A6AF /* ViewController.swift */; };
-		04FB41E525C2C2A500B6A6AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FB41E325C2C2A500B6A6AF /* Main.storyboard */; };
 		04FB41E725C2C2A700B6A6AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FB41E625C2C2A700B6A6AF /* Assets.xcassets */; };
 		04FB41EA25C2C2A700B6A6AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FB41E825C2C2A700B6A6AF /* LaunchScreen.storyboard */; };
 		04FB41F525C2C2A700B6A6AF /* TimFretelloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB41F425C2C2A700B6A6AF /* TimFretelloTests.swift */; };
 		04FB420025C2C2A700B6A6AF /* TimFretelloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB41FF25C2C2A700B6A6AF /* TimFretelloUITests.swift */; };
+		04FB421C25C2C66800B6A6AF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB421B25C2C66800B6A6AF /* HomeViewController.swift */; };
+		04FB423125C2CA8700B6A6AF /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB423025C2CA8700B6A6AF /* ApiClient.swift */; };
+		04FB423925C2CAE200B6A6AF /* SessionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB423825C2CAE200B6A6AF /* SessionsModel.swift */; };
+		04FB423F25C2CD6D00B6A6AF /* HomeViewWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB423E25C2CD6D00B6A6AF /* HomeViewWorker.swift */; };
+		04FB424725C2D2F600B6A6AF /* HomeViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB424625C2D2F600B6A6AF /* HomeViewInteractor.swift */; };
+		04FB424F25C2D46600B6A6AF /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB424E25C2D46600B6A6AF /* HomeViewPresenter.swift */; };
+		04FB425A25C2E74500B6A6AF /* SessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB425925C2E74500B6A6AF /* SessionCell.swift */; };
+		3B073A5AF0FA0FB6605F184B /* Pods_TimFretello_TimFretelloUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB7A3BDF2D358943A4F79E6 /* Pods_TimFretello_TimFretelloUITests.framework */; };
+		A5E8E63B30A4B1B0D303EC2A /* Pods_TimFretelloTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4617CB7DF03FD64401E0F08 /* Pods_TimFretelloTests.framework */; };
+		F5BC2C9ECE977724F402760A /* Pods_TimFretello.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ABC96FFCE980D396BF2F99 /* Pods_TimFretello.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00ABC96FFCE980D396BF2F99 /* Pods_TimFretello.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimFretello.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A3DD9B25C2FEBB007ADB2C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		04FB41DA25C2C2A500B6A6AF /* TimFretello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimFretello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FB41DD25C2C2A500B6A6AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04FB41DF25C2C2A500B6A6AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04FB41E125C2C2A500B6A6AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04FB41E425C2C2A500B6A6AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04FB41E625C2C2A700B6A6AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04FB41E925C2C2A700B6A6AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04FB41EB25C2C2A700B6A6AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +58,21 @@
 		04FB41FB25C2C2A700B6A6AF /* TimFretelloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimFretelloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FB41FF25C2C2A700B6A6AF /* TimFretelloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimFretelloUITests.swift; sourceTree = "<group>"; };
 		04FB420125C2C2A700B6A6AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FB421B25C2C66800B6A6AF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		04FB423025C2CA8700B6A6AF /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		04FB423825C2CAE200B6A6AF /* SessionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsModel.swift; sourceTree = "<group>"; };
+		04FB423E25C2CD6D00B6A6AF /* HomeViewWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewWorker.swift; sourceTree = "<group>"; };
+		04FB424625C2D2F600B6A6AF /* HomeViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewInteractor.swift; sourceTree = "<group>"; };
+		04FB424E25C2D46600B6A6AF /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
+		04FB425925C2E74500B6A6AF /* SessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCell.swift; sourceTree = "<group>"; };
+		4E9AFC1C108F065500084AAC /* Pods-TimFretelloTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimFretelloTests.release.xcconfig"; path = "Target Support Files/Pods-TimFretelloTests/Pods-TimFretelloTests.release.xcconfig"; sourceTree = "<group>"; };
+		546B04B0B59F23B24AC92690 /* Pods-TimFretelloTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimFretelloTests.debug.xcconfig"; path = "Target Support Files/Pods-TimFretelloTests/Pods-TimFretelloTests.debug.xcconfig"; sourceTree = "<group>"; };
+		91C0D3B67B772A93EA2DF307 /* Pods-TimFretello-TimFretelloUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimFretello-TimFretelloUITests.release.xcconfig"; path = "Target Support Files/Pods-TimFretello-TimFretelloUITests/Pods-TimFretello-TimFretelloUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A4617CB7DF03FD64401E0F08 /* Pods_TimFretelloTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimFretelloTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1A32371D675EA34A259FDAC /* Pods-TimFretello.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimFretello.debug.xcconfig"; path = "Target Support Files/Pods-TimFretello/Pods-TimFretello.debug.xcconfig"; sourceTree = "<group>"; };
+		C343CDA4706D663036BE26CB /* Pods-TimFretello-TimFretelloUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimFretello-TimFretelloUITests.debug.xcconfig"; path = "Target Support Files/Pods-TimFretello-TimFretelloUITests/Pods-TimFretello-TimFretelloUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D314092D62A34D5BA6481240 /* Pods-TimFretello.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimFretello.release.xcconfig"; path = "Target Support Files/Pods-TimFretello/Pods-TimFretello.release.xcconfig"; sourceTree = "<group>"; };
+		DBB7A3BDF2D358943A4F79E6 /* Pods_TimFretello_TimFretelloUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimFretello_TimFretelloUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5BC2C9ECE977724F402760A /* Pods_TimFretello.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E8E63B30A4B1B0D303EC2A /* Pods_TimFretelloTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +96,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B073A5AF0FA0FB6605F184B /* Pods_TimFretello_TimFretelloUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04A3DD9A25C2FEAC007ADB2C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				04A3DD9B25C2FEBB007ADB2C /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		04FB41D125C2C2A500B6A6AF = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +118,8 @@
 				04FB41F325C2C2A700B6A6AF /* TimFretelloTests */,
 				04FB41FE25C2C2A700B6A6AF /* TimFretelloUITests */,
 				04FB41DB25C2C2A500B6A6AF /* Products */,
+				5B93D10AD84DF23F6C131FAE /* Pods */,
+				54983769C01CEE1450188EC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +136,13 @@
 		04FB41DC25C2C2A500B6A6AF /* TimFretello */ = {
 			isa = PBXGroup;
 			children = (
+				04A3DD9A25C2FEAC007ADB2C /* Constants */,
+				04FB425825C2E73100B6A6AF /* Cell */,
+				04FB422F25C2CA7800B6A6AF /* api */,
+				04FB422725C2C9B000B6A6AF /* Model */,
+				04FB422625C2C98900B6A6AF /* Scene */,
 				04FB41DD25C2C2A500B6A6AF /* AppDelegate.swift */,
 				04FB41DF25C2C2A500B6A6AF /* SceneDelegate.swift */,
-				04FB41E125C2C2A500B6A6AF /* ViewController.swift */,
-				04FB41E325C2C2A500B6A6AF /* Main.storyboard */,
 				04FB41E625C2C2A700B6A6AF /* Assets.xcassets */,
 				04FB41E825C2C2A700B6A6AF /* LaunchScreen.storyboard */,
 				04FB41EB25C2C2A700B6A6AF /* Info.plist */,
@@ -128,6 +168,72 @@
 			path = TimFretelloUITests;
 			sourceTree = "<group>";
 		};
+		04FB422625C2C98900B6A6AF /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				04FB423D25C2CD4400B6A6AF /* Home */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		04FB422725C2C9B000B6A6AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04FB423825C2CAE200B6A6AF /* SessionsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04FB422F25C2CA7800B6A6AF /* api */ = {
+			isa = PBXGroup;
+			children = (
+				04FB423025C2CA8700B6A6AF /* ApiClient.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		04FB423D25C2CD4400B6A6AF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				04FB421B25C2C66800B6A6AF /* HomeViewController.swift */,
+				04FB423E25C2CD6D00B6A6AF /* HomeViewWorker.swift */,
+				04FB424625C2D2F600B6A6AF /* HomeViewInteractor.swift */,
+				04FB424E25C2D46600B6A6AF /* HomeViewPresenter.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		04FB425825C2E73100B6A6AF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04FB425925C2E74500B6A6AF /* SessionCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		54983769C01CEE1450188EC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00ABC96FFCE980D396BF2F99 /* Pods_TimFretello.framework */,
+				DBB7A3BDF2D358943A4F79E6 /* Pods_TimFretello_TimFretelloUITests.framework */,
+				A4617CB7DF03FD64401E0F08 /* Pods_TimFretelloTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B93D10AD84DF23F6C131FAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1A32371D675EA34A259FDAC /* Pods-TimFretello.debug.xcconfig */,
+				D314092D62A34D5BA6481240 /* Pods-TimFretello.release.xcconfig */,
+				C343CDA4706D663036BE26CB /* Pods-TimFretello-TimFretelloUITests.debug.xcconfig */,
+				91C0D3B67B772A93EA2DF307 /* Pods-TimFretello-TimFretelloUITests.release.xcconfig */,
+				546B04B0B59F23B24AC92690 /* Pods-TimFretelloTests.debug.xcconfig */,
+				4E9AFC1C108F065500084AAC /* Pods-TimFretelloTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +241,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04FB420425C2C2A700B6A6AF /* Build configuration list for PBXNativeTarget "TimFretello" */;
 			buildPhases = (
+				BE73B31DC9CAE527C865BD54 /* [CP] Check Pods Manifest.lock */,
 				04FB41D625C2C2A500B6A6AF /* Sources */,
 				04FB41D725C2C2A500B6A6AF /* Frameworks */,
 				04FB41D825C2C2A500B6A6AF /* Resources */,
+				DE36A3A275FA3A49AE58635E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +260,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04FB420725C2C2A700B6A6AF /* Build configuration list for PBXNativeTarget "TimFretelloTests" */;
 			buildPhases = (
+				2618C2DD730DB6C12064E6CF /* [CP] Check Pods Manifest.lock */,
 				04FB41EC25C2C2A700B6A6AF /* Sources */,
 				04FB41ED25C2C2A700B6A6AF /* Frameworks */,
 				04FB41EE25C2C2A700B6A6AF /* Resources */,
@@ -170,9 +279,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04FB420A25C2C2A700B6A6AF /* Build configuration list for PBXNativeTarget "TimFretelloUITests" */;
 			buildPhases = (
+				58DA5FAAB5620BCED9B4C3CC /* [CP] Check Pods Manifest.lock */,
 				04FB41F725C2C2A700B6A6AF /* Sources */,
 				04FB41F825C2C2A700B6A6AF /* Frameworks */,
 				04FB41F925C2C2A700B6A6AF /* Resources */,
+				134E6BEBC59BD2D1A4DA5311 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +344,6 @@
 			files = (
 				04FB41EA25C2C2A700B6A6AF /* LaunchScreen.storyboard in Resources */,
 				04FB41E725C2C2A700B6A6AF /* Assets.xcassets in Resources */,
-				04FB41E525C2C2A500B6A6AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +363,124 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		134E6BEBC59BD2D1A4DA5311 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimFretello-TimFretelloUITests/Pods-TimFretello-TimFretelloUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimFretello-TimFretelloUITests/Pods-TimFretello-TimFretelloUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimFretello-TimFretelloUITests/Pods-TimFretello-TimFretelloUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2618C2DD730DB6C12064E6CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimFretelloTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58DA5FAAB5620BCED9B4C3CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimFretello-TimFretelloUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE73B31DC9CAE527C865BD54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimFretello-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE36A3A275FA3A49AE58635E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimFretello/Pods-TimFretello-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimFretello/Pods-TimFretello-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimFretello/Pods-TimFretello-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04FB41D625C2C2A500B6A6AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04FB41E225C2C2A500B6A6AF /* ViewController.swift in Sources */,
 				04FB41DE25C2C2A500B6A6AF /* AppDelegate.swift in Sources */,
+				04A3DD9C25C2FEBB007ADB2C /* Constants.swift in Sources */,
+				04FB425A25C2E74500B6A6AF /* SessionCell.swift in Sources */,
 				04FB41E025C2C2A500B6A6AF /* SceneDelegate.swift in Sources */,
+				04FB423925C2CAE200B6A6AF /* SessionsModel.swift in Sources */,
+				04FB424725C2D2F600B6A6AF /* HomeViewInteractor.swift in Sources */,
+				04FB421C25C2C66800B6A6AF /* HomeViewController.swift in Sources */,
+				04FB423F25C2CD6D00B6A6AF /* HomeViewWorker.swift in Sources */,
+				04FB424F25C2D46600B6A6AF /* HomeViewPresenter.swift in Sources */,
+				04FB423125C2CA8700B6A6AF /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +516,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		04FB41E325C2C2A500B6A6AF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04FB41E425C2C2A500B6A6AF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04FB41E825C2C2A700B6A6AF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,6 +645,7 @@
 		};
 		04FB420525C2C2A700B6A6AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A32371D675EA34A259FDAC /* Pods-TimFretello.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +665,7 @@
 		};
 		04FB420625C2C2A700B6A6AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D314092D62A34D5BA6481240 /* Pods-TimFretello.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +685,7 @@
 		};
 		04FB420825C2C2A700B6A6AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 546B04B0B59F23B24AC92690 /* Pods-TimFretelloTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +708,7 @@
 		};
 		04FB420925C2C2A700B6A6AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E9AFC1C108F065500084AAC /* Pods-TimFretelloTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +731,7 @@
 		};
 		04FB420B25C2C2A700B6A6AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C343CDA4706D663036BE26CB /* Pods-TimFretello-TimFretelloUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +752,7 @@
 		};
 		04FB420C25C2C2A700B6A6AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91C0D3B67B772A93EA2DF307 /* Pods-TimFretello-TimFretelloUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
