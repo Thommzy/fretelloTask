@@ -14,8 +14,29 @@ class SessionCell: UITableViewCell {
         didSet{
             sessionName.text = "Name: \(session?.name ?? String())"
             sessionPracticedAtBpm.text = "practicedAtBpm: \(session?.practicedAtBpm ?? Int())"
+            let id = Int(session?.exerciseId ?? "") ?? Int()
+            let url = URL(string:"\(FreTello.baseURL)img/\(id).png")
+            DispatchQueue.global(qos: .background).async {
+                do
+                     {
+                        if let data = try? Data(contentsOf: url!)
+                        {
+                            DispatchQueue.main.async {
+                                let image: UIImage = UIImage(data: data) ?? UIImage()
+                                self.exerciseImage.image = image
+                                print(image)
+                            }
+                        }
+                     }
+                catch {
+                    print("error")
+                }
+            }
+            
         }
     }
+    
+   
     
     private let mainView : UIView = {
         let view = UIView()
@@ -39,6 +60,13 @@ class SessionCell: UITableViewCell {
         return label
     }()
     
+    private let exerciseImage : UIImageView = {
+        let uiImage = UIImageView()
+        uiImage.layer.cornerRadius = 15
+        uiImage.backgroundColor = .black
+        return uiImage
+    }()
+    
     private func formatDate(str: String) -> String {
         let pre = str.prefix(10)
         return String(pre)
@@ -50,6 +78,7 @@ class SessionCell: UITableViewCell {
         mainView.addSubview(sessionName)
         mainView.addSubview(sessionDatePracticed)
         mainView.addSubview(sessionPracticedAtBpm)
+        mainView.addSubview(exerciseImage)
         
         mainView.snp.makeConstraints { (make) in
             make.top.equalTo(contentView).offset(5)
@@ -75,6 +104,13 @@ class SessionCell: UITableViewCell {
             make.top.equalTo(sessionDatePracticed.snp.bottom).offset(5)
             make.left.equalTo(mainView).offset(10)
             make.right.equalTo(mainView).offset(-10)
+        }
+        
+        exerciseImage.snp.makeConstraints { (make) in
+            make.top.equalTo(mainView.snp.top).offset(5)
+            make.right.equalTo(mainView.snp.right).offset(-25)
+            make.bottom.equalTo(mainView.snp.bottom).offset(-5)
+            make.left.equalTo(mainView.snp.left).offset(300)
         }
     }
     

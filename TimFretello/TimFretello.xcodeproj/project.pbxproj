@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045DCF9A25C47A12001485C9 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DCF9925C47A12001485C9 /* HelperFunctions.swift */; };
 		04A3DD9C25C2FEBB007ADB2C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A3DD9B25C2FEBB007ADB2C /* Constants.swift */; };
 		04FB41DE25C2C2A500B6A6AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB41DD25C2C2A500B6A6AF /* AppDelegate.swift */; };
 		04FB41E025C2C2A500B6A6AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FB41DF25C2C2A500B6A6AF /* SceneDelegate.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		00ABC96FFCE980D396BF2F99 /* Pods_TimFretello.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimFretello.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		045DCF9925C47A12001485C9 /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 		04A3DD9B25C2FEBB007ADB2C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		04FB41DA25C2C2A500B6A6AF /* TimFretello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimFretello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FB41DD25C2C2A500B6A6AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				04FB41E625C2C2A700B6A6AF /* Assets.xcassets */,
 				04FB41E825C2C2A700B6A6AF /* LaunchScreen.storyboard */,
 				04FB41EB25C2C2A700B6A6AF /* Info.plist */,
+				045DCF9925C47A12001485C9 /* HelperFunctions.swift */,
 			);
 			path = TimFretello;
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 				04FB421C25C2C66800B6A6AF /* HomeViewController.swift in Sources */,
 				04FB423F25C2CD6D00B6A6AF /* HomeViewWorker.swift in Sources */,
 				04FB424F25C2D46600B6A6AF /* HomeViewPresenter.swift in Sources */,
+				045DCF9A25C47A12001485C9 /* HelperFunctions.swift in Sources */,
 				04FB423125C2CA8700B6A6AF /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

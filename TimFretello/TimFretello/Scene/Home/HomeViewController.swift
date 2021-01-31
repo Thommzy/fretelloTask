@@ -17,14 +17,39 @@ class HomeViewController: UIViewController, GetDataDisplayLogic, UITableViewDele
     var interactor : GetDataBusinessLogic?
     var sessionTableView  = UITableView()
     
+    var highestLabel = UILabel()
+    
     let cellId = FreTello.cellId
     var session : [SessionsResponse] = []
     
     func displayDataAlert(alert: [SessionsResponse]) {
-        let reversed = alert.reversed()
-        session += reversed
+        session += alert
+        let array = session.map{$0.exercises.map{$0?.practicedAtBpm ?? Int()}}
+        print(array)
+        let maximum = getMax(array)
+        print(maximum)
+        highestLabel.text = "   Maximum Practice Performance: \(maximum)%"
         sessionTableView.reloadData()
     }
+    
+//    func getAverage(arr: [Int]) -> Double {
+//        let total = arr.reduce(0, +)
+//        let count = arr.count
+//        let average = Double(total)/Double(count)
+//        return average
+//    }
+//
+//    func getHighest(arr: [Int]) -> Int {
+//        let highest = arr.max()
+//        return highest ?? Int()
+//    }
+//
+//    func getPercentagePerAverage(highest: Int, average: Double) -> Int {
+//        let percent = highest * 100
+//        let final = Double(percent) / average
+//        let convertFinalToInt = Int(final)
+//        return convertFinalToInt
+//    }
     
     func displayErrorAlert(alert: String) {
         print("<<Error>>",alert)
@@ -37,6 +62,7 @@ class HomeViewController: UIViewController, GetDataDisplayLogic, UITableViewDele
         setup()
         interactor?.getData()
         
+        setupHighestLabel()
         setupSessionTableView()
         
         sessionTableView.reloadData()
@@ -46,13 +72,31 @@ class HomeViewController: UIViewController, GetDataDisplayLogic, UITableViewDele
         
     }
     
+    func setupHighestLabel() {
+        view.addSubview(highestLabel)
+        highestLabel.textColor = .white
+        highestLabel.backgroundColor = .black
+        highestLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(view.safeAreaLayoutGuide).offset(10)
+            make.left.equalTo(view.snp.left).offset(0)
+            make.right.equalTo(view.snp.right).offset(0)
+            make.height.equalTo(50)
+        }
+    }
+    
     func setupSessionTableView() {
         view.addSubview(sessionTableView)
         sessionTableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(view)
+            make.top.equalTo(highestLabel.snp.bottom).offset(10)
+            make.left.equalTo(view.snp.left).offset(0)
+            make.right.equalTo(view.snp.right).offset(0)
+            make.bottom.equalTo(view.snp.bottom).offset(0)
+            //make.edges.equalTo(view)
         }
         sessionTableView.register(SessionCell.self, forCellReuseIdentifier: cellId)
     }
+    
+  
     
     func setupNavigationLogo() {
         
@@ -93,6 +137,7 @@ class HomeViewController: UIViewController, GetDataDisplayLogic, UITableViewDele
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+       
         let sectionHeader = UIView()
         
         sectionHeader.backgroundColor = .black
